@@ -16,4 +16,4 @@ You can add your income and expenses, giving them a description and a value. It 
 Also you can see a chart with stats of your income and expenses and select a month to see the stats of that month.
 
 ![App without imputs](/src/assets/images/Captura%20de%20pantalla%20de%202023-03-28%2018-25-00.png)
-![With some examples imputs](/src/assets/images/Captura%20de%20pantalla%20de%202023-03-28%2018-25-15.png)
+![With some examples imputs](/src/assets/images/Captura%20de%20pantalla%20de%202023-03-28%2018-44-51.png)
