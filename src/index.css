@@ -1,0 +1,51 @@
+:root {
+  box-sizing: border-box;
+  font-size: 0.785em;
+  --bg-color: #f7f8fc;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: none 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--bg-color);
+  width: 100vw;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: "Titillium Web", sans-serif;
+}
+h1{
+  font-size: 3.5rem;
+}
+h2{
+  font-size: 2.25rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.1rem;
+}
+h5{
+  font-size: 0.9rem;
+}
+h6{
+  font-size: 0.7rem;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

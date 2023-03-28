@@ -1,0 +1,9 @@
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #faf2f6;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    padding: 1em 0;
+    }

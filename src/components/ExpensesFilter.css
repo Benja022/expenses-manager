@@ -1,0 +1,76 @@
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #191a1c;
+    border-radius: .3rem;
+}
+
+.chart .bars {
+    flex-basis: 70%;
+}
+
+.charts .form {
+    flex-basis: 30%;
+}
+
+
+.chart .bars {
+    width: 100%;
+    padding: 0 .5em;
+}
+
+.chart .bar {
+    width: 100%;
+    background-color: #f7f8fc;
+}
+
+.chart .expenses,
+.chart .incomes {
+    width: 0%;
+    height: 10px;
+    transition: all 1.5 ease;
+}
+
+.chart .incomes {
+    background-color: #23d4b0;
+}
+
+.chart .expenses {
+    background-color: #ce5352;
+}
+
+.chart .bar,
+.chart .incomes,
+.chart .expenses {
+    height: 10px;
+    border-radius: 3rem;
+}
+
+.chart .bar:first-of-type {
+    margin-bottom: 1em;
+}
+
+.chart select {
+    border-right: 10px solid transparent;
+    border-radius: .5rem;
+    padding: .8rem;
+    font-weight: bold;
+    background-color: #3056cf;
+    color: white;
+    transition: all .15s ease-in-out;
+}
+
+.chart select:focus {
+    color: #303133;
+    background-color: #0bb7e1;
+    border-color: #09b7e4;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(9, 183, 228 .75);
+    transition: all .15 ease-in-out;
+}
+.chart .label p {
+    color: white;
+    margin-bottom: .5em;
+}

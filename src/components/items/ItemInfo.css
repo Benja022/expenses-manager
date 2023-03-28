@@ -1,0 +1,7 @@
+.item-info{
+    flex-basis: 50%;
+}
+.expense-date{
+    color: #b0b0b8;
+    font-size: 1.5rem;
+}

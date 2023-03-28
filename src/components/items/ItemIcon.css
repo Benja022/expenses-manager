@@ -1,0 +1,46 @@
+.item-icon{
+    flex-basis: 15%;
+}
+/* Icon stacks */
+.incoming{
+    color: #3772a9;
+}
+.light-incoming{
+    color: #eafaf8;
+}
+.transfer{
+    color: #6465d8;
+}
+.light-transfer{
+    color: #eeeffc;
+}
+.cart{
+    color: #48a6e2;
+}
+.light-cart{
+    color: #ecc5fe;
+}
+.bizum{
+    color: #33d3d8;
+}
+.light-bizum{
+    color: #eeeffc;
+}
+.bill{
+    color: #d977eb;
+}
+.light-bill{
+    color: #f8f2fd;
+}
+.electricity{
+    color: #fac904;
+}
+.light-electricity{
+    color: #edfaf8;
+}
+.insurance {
+    color: #fdfcff;
+}
+.light-insurance {
+    color: #04add0;
+}

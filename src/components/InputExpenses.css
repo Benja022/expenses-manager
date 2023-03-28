@@ -1,0 +1,132 @@
+.new-expense {
+  width: 100%;
+  background-color: #237fcd;
+  padding: 2em;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+.new-expense .item-icon {
+  position: absolute;
+  top: -18px;
+}
+.new-expense h2 {
+  flex-basis: 100%;
+}
+.new-expense h3 {
+  color: #f4ffff;
+}
+.form-container {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding: 0.5em 3em;
+  display: flex;
+  flex-direction: column;
+  max-height: 150px;
+  /* max-height: se pone para que funcione la transición de cerrar el formulario, que necesita un tamaño. 
+  Ponemos un tamaño que nunca va a alcanzar; */
+  transition: all 0.3s linear;
+}
+.new-expense input,
+.new-expense select,
+.new-expense button {
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  transition: all 0.15s ease-in-out;
+}
+.new-expense input:focus,
+.new-expense select:focus,
+.new-expense button:active:focus {
+  color: #303133;
+  background-color: #f4f5f9;
+  border-color: #18191b;
+  box-shadow: 0 0 0 0.25rem rgba(24, 25, 27, 0.25);
+  transition: all 0.15s ease-in-out;
+}
+.new-expense button {
+  background-color: #097be4;
+  color: #f4ffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 3rem 0 1em;
+  flex-basis: 30%;
+}
+.income-container {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+}
+.income-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.income-container label{
+  cursor: pointer;
+}
+
+/* Creating a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: backgroun-color 0.15s ease-in-out;
+}
+/* On mouse over,add a background color */
+.checkmark:hover {
+  background-color: #097be4;
+  transition: 0.25s ease-in-out;
+}
+/* When the checkbox is checked, add a blue background */
+
+.income-container input:checked ~ .checkmark {
+  background-color:#09b7e4 ;
+  transition: 0.25s ease-in-out;
+}
+/* Create the .checkmark indicator (hidden when not checked) */
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the .checkmark when checked */
+
+.income-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* Style the .checkmark indicator */
+
+.income-container .checkmark::after {
+  bottom: 8px;
+  left: 10px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* Efecto de ocultar el formulario */
+
+.hidden,
+.hidden .checkmark,
+button.hidden {
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
