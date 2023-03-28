@@ -8,8 +8,8 @@ Actually it is not responsive, so it is not recommended to use it on mobile devi
 ## Installation
 Download the project and run the following commands:
 
-'''npm install
-'''npm start
+´´´npm install
+´´´npm start
 
 ## Usage
 You can add your income and expenses, giving them a description and a value. It depends if it is an income or an expense, and its type (food, health, etc), appear one or another icons and color.
